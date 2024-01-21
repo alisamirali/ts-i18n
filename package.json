@@ -1,0 +1,16 @@
+{
+  "name": "ts-i18n",
+  "version": "1.0.0",
+  "description": "Effortlessly manage internationalization in TypeScript with ts-i18n. This library offers simple language switching and translation support for a globalized user",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node index.ts",
+    "start": "node index.js"
+  },
+  "author": "Ali Samir",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
