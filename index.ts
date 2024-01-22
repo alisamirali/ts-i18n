@@ -9,7 +9,6 @@ type TranslationMap = {
  * Internationalization (i18n) class for managing language switching and translation.
  */
 class I18n {
-  private currentLanguage: string;
   private translations: { [lang: string]: TranslationMap };
 
   /**
@@ -18,12 +17,13 @@ class I18n {
    * @param translations - A dictionary containing language-specific translation maps.
    */
   constructor(
-    defaultLanguage: string,
+    private currentLanguage: string,
+
     translations: { [lang: string]: TranslationMap }
   ) {
-    this.currentLanguage = defaultLanguage;
+    this.currentLanguage = currentLanguage;
     this.translations = translations;
-    this.setLanguage(defaultLanguage); // Set the default language during initialization
+    this.setLanguage(currentLanguage); // Set the default language during initialization
   }
 
   /**
