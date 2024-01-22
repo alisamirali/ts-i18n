@@ -17,7 +17,9 @@ class I18n {
   public constructor(
     private currentLanguage: string,
     private translations: { [lang: string]: TranslationMap }
-  ) {}
+  ) {
+    // Code Here
+  }
 
   /**
    * Sets the current language for translations.
