@@ -18,7 +18,6 @@ class I18n {
    */
   constructor(
     private currentLanguage: string,
-
     translations: { [lang: string]: TranslationMap }
   ) {
     this.currentLanguage = currentLanguage;
