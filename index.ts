@@ -18,7 +18,7 @@ class I18n {
     private currentLanguage: string,
     private translations: { [lang: string]: TranslationMap }
   ) {
-    // Code Here
+    //
   }
 
   /**
