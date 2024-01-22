@@ -1,4 +1,4 @@
-# ts-i18n
+# ts-iTranslate
 
 `ts-i18n` is a lightweight TypeScript library for seamless internationalization (i18n) in web applications. It offers simple language switching and translation support, making it easy to create multilingual user interfaces.
 
@@ -7,7 +7,7 @@
 Install the package using npm:
 
 ```bash
-npm install ts-i18n
+npm install ts-iTranslate
 ```
 
 ---
@@ -17,7 +17,7 @@ npm install ts-i18n
 - Importing
 
 ```ts
-import I18n from "ts-i18n";
+import I18n from "ts-iTranslate";
 ```
 
 ---
