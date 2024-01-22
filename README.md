@@ -1,6 +1,6 @@
 # ts-iTranslate
 
-`ts-i18n` is a lightweight TypeScript library for seamless internationalization (i18n) in web applications. It offers simple language switching and translation support, making it easy to create multilingual user interfaces.
+`ts-iTranslate` is a lightweight TypeScript library for seamless internationalization (i18n) in web applications. It offers simple language switching and translation support, making it easy to create multilingual user interfaces.
 
 ## Installation
 

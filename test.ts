@@ -24,5 +24,7 @@ const i18n = new I18n("ar", translations);
  * In this example, it retrieves the localized greeting.
  */
 const greeting = i18n.translate("greeting");
+const name = i18n.translate("name");
 
 console.log(greeting);
+console.log(name);
