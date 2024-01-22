@@ -13,16 +13,15 @@ class I18n {
 
   /**
    * Initializes a new instance of the I18n class.
-   * @param defaultLanguage - The default language to use.
+   * @param currentLanguage - The default language to use.
    * @param translations - A dictionary containing language-specific translation maps.
    */
-  constructor(
+  public constructor(
     private currentLanguage: string,
     translations: { [lang: string]: TranslationMap }
   ) {
-    this.currentLanguage = currentLanguage;
+    // this.setLanguage(currentLanguage); // Set the default language during initialization
     this.translations = translations;
-    this.setLanguage(currentLanguage); // Set the default language during initialization
   }
 
   /**
