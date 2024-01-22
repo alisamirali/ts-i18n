@@ -1,7 +1,7 @@
 {
-  "name": "ts-i18n",
+  "name": "ts-iTranslate",
   "version": "1.0.0",
-  "description": "Effortlessly manage internationalization in TypeScript with ts-i18n. This library offers simple language switching and translation support for a globalized user",
+  "description": "Effortlessly manage internationalization in TypeScript with ts-iTranslate. This library offers simple language switching and translation support for a globalized user",
   "main": "index.ts",
   "scripts": {
     "build": "tsc",
