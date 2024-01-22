@@ -1,3 +1,4 @@
+// Assuming the correct path to the I18n class implementation
 import I18n from "./index";
 
 /**
@@ -17,7 +18,7 @@ const translations = {
 /**
  * Create an instance of the I18n class with the default language and translations.
  */
-const i18n = new I18n("ar", translations);
+const i18n = new I18n("en", translations);
 
 /**
  * Get a localized string using the translate function.

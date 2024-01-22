@@ -10,7 +10,7 @@ type TranslationMap = {
  */
 class I18n {
   private currentLanguage: string;
-  private translations: { [lang: string]: TranslationMap } = {};
+  private translations: { [lang: string]: TranslationMap };
 
   /**
    * Initializes a new instance of the I18n class.
@@ -23,18 +23,15 @@ class I18n {
   ) {
     this.currentLanguage = defaultLanguage;
     this.translations = translations;
+    this.setLanguage(defaultLanguage); // Set the default language during initialization
   }
 
   /**
    * Sets the current language for translations.
    * @param language - The language code to set as the current language.
    */
-  setLanguage(language: string): void {
-    if (this.translations[language]) {
-      this.currentLanguage = language;
-    } else {
-      console.warn(`Language "${language}" is not available.`);
-    }
+  private setLanguage(language: string) {
+    this.currentLanguage = language;
   }
 
   /**
@@ -42,16 +39,9 @@ class I18n {
    * @param key - The translation key to look up.
    * @returns The translated string for the given key, or the key itself if not found.
    */
-  translate(key: string): string {
+  translate(key: string) {
     const translationMap = this.translations[this.currentLanguage];
-    if (translationMap && translationMap[key]) {
-      return translationMap[key];
-    } else {
-      console.warn(
-        `Translation key "${key}" not found for language "${this.currentLanguage}".`
-      );
-      return key;
-    }
+    return translationMap ? translationMap[key] || key : key;
   }
 }
 
